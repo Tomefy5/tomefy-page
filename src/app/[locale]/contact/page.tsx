@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Container, Section, Heading, MotionWrapper, PageLayout } from "@/components/ui";
-import { socialLinks } from "@/lib/constants";
+import { socialLinks, email } from "@/lib/constants";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <MotionWrapper variant="scaleIn" delay={0.2} className="mt-10">
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
-                href={`mailto:${t("email")}`}
+                href={`mailto:${email}`}
                 className="btn-text inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-3.5 text-bg-primary shadow-glass transition-all duration-200 hover:bg-accent-hover hover:-translate-y-0.5 hover:shadow-glass-lg active:translate-y-0"
               >
                 {t("cta")}
@@ -53,7 +53,7 @@ export default function ContactPage() {
             </div>
           </MotionWrapper>
           <MotionWrapper variant="scaleIn" delay={0.3} className="mt-6">
-            <p className="caption text-text-tertiary">{t("email")}</p>
+            <p className="caption text-text-tertiary">{email}</p>
           </MotionWrapper>
         </Container>
       </Section>

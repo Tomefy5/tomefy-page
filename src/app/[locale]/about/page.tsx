@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Container, Section, Heading, MotionWrapper, Float, Card, PageLayout } from "@/components/ui";
 
@@ -25,21 +26,36 @@ export default function AboutPage() {
     <PageLayout>
       <Section>
         <Container>
-          <MotionWrapper variant="scaleIn">
-            <Heading variant="label">{t("title")}</Heading>
-          </MotionWrapper>
-          <MotionWrapper variant="scaleIn" delay={0.1} className="mt-6 max-w-3xl">
-            <Heading variant="display">{t("hero.heading")}</Heading>
-          </MotionWrapper>
-          <MotionWrapper variant="scaleIn" delay={0.2} className="mt-8 max-w-2xl">
-            <div className="space-y-4 text-body text-text-secondary">
-              {t("hero.body")
-                .split("\n\n")
-                .map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
+          <div className="flex flex-col items-start gap-12 md:flex-row">
+            <div className="flex-1">
+              <MotionWrapper variant="scaleIn">
+                <Heading variant="label">{t("title")}</Heading>
+              </MotionWrapper>
+              <MotionWrapper variant="scaleIn" delay={0.1} className="mt-6">
+                <Heading variant="display">{t("hero.heading")}</Heading>
+              </MotionWrapper>
+              <MotionWrapper variant="scaleIn" delay={0.2} className="mt-8">
+                <div className="space-y-4 text-body text-text-secondary">
+                  {t("hero.body")
+                    .split("\n\n")
+                    .map((p, i) => (
+                      <p key={i}>{p}</p>
+                    ))}
+                </div>
+              </MotionWrapper>
             </div>
-          </MotionWrapper>
+            <MotionWrapper variant="fadeIn" delay={0.3}>
+              <div className="relative h-44 w-44 shrink-0 overflow-hidden rounded-full border border-border-glass md:h-48 md:w-48">
+                <Image
+                  src="/images/tomefy-pdp.png"
+                  alt="Tomefy"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </MotionWrapper>
+          </div>
         </Container>
       </Section>
 

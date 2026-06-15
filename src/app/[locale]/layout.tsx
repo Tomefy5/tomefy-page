@@ -7,7 +7,7 @@ import PageTransition from "@/components/ui/PageTransition";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { AmbientGlow } from "@/components/ui";
-import { siteUrl } from "@/lib/constants";
+import { siteUrl, email } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +24,12 @@ const jsonLd = {
   "@type": "Person",
   name: "Tomefy",
   url: siteUrl,
+  email: "tomefy@sainalabs.com",
   jobTitle: ["AI Automation Engineer", "AI Agent Engineer", "Entrepreneur"],
   sameAs: [
-    "https://github.com/tomefy",
-    "https://linkedin.com/in/tomefy",
-    "https://twitter.com/tomefy",
+    "https://github.com/Tomefy5",
+    "https://www.linkedin.com/in/tomefy-ny-soa-andry-tsiresy-9a111a322/",
+    "https://x.com/Tomefy5",
   ],
 };
 
