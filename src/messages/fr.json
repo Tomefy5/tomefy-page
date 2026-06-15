@@ -1,0 +1,262 @@
+{
+  "Home": {
+    "title": "Accueil",
+    "description": "Portfolio bilingue premium de Tomefy, ingénieur en automatisation IA et ingénieur en agents IA."
+  },
+  "About": {
+    "title": "À Propos"
+  },
+  "Contact": {
+    "title": "Contact"
+  },
+  "Work": {
+    "title": "Travail"
+  },
+  "Lab": {
+    "title": "Laboratoire"
+  },
+  "Entrepreneurship": {
+    "title": "Entrepreneuriat"
+  },
+  "Notes": {
+    "title": "Notes"
+  },
+  "AboutPage": {
+    "title": "À Propos",
+    "description": "Découvrez Tomefy, ingénieur en automatisation IA et entrepreneur spécialisé dans les systèmes d'IA autonomes.",
+    "hero": {
+      "heading": "Je construis des systèmes d'IA autonomes.",
+      "body": "Je suis ingénieur en automatisation IA et ingénieur en agents IA, avec une expertise approfondie dans la conception de systèmes qui pensent, décident et agissent de manière indépendante. Mon travail se situe à l'intersection du génie logiciel, des opérations de machine learning et de l'architecture système.\n\nCes dernières années, j'ai aidé des entreprises à transformer leurs processus manuels en opérations intelligentes et évolutives — de l'automatisation du support client à l'orchestration multi-agents complexe. Je crois que l'avenir du travail est autonome, et je le construis un agent à la fois."
+    },
+    "expertise": {
+      "heading": "Domaines d'expertise",
+      "items": [
+        {
+          "title": "Ingénierie d'Agents IA",
+          "description": "Conception et déploiement d'agents autonomes qui perçoivent, raisonnent et agissent dans des environnements complexes."
+        },
+        {
+          "title": "Automatisation de Workflows",
+          "description": "Transformation de processus manuels multi-étapes en pipelines automatisés fiables et événementiels."
+        },
+        {
+          "title": "Architecture Système",
+          "description": "Construction d'infrastructures scalables et observables pour les systèmes d'IA de production."
+        },
+        {
+          "title": "Intégration LLM",
+          "description": "Intégration de grands modèles de langage dans des produits réels avec des garde-fous robustes."
+        }
+      ]
+    },
+    "approach": {
+      "heading": "Comment je travaille",
+      "body": "Je commence par le problème, pas par la technologie. Chaque projet débute par la compréhension du workflow à automatiser — les entrées, les décisions, les exceptions. Ensuite, je conçois un système qui s'adapte à votre infrastructure, pas l'inverse.\n\nJe crois en l'ingénierie tournée vers la production. Un agent qui fonctionne en démo mais échoue en production n'a pas de valeur. Je construis des systèmes observables, résilients et maintenables dès le premier jour."
+    }
+  },
+  "WorkPage": {
+    "title": "Travail",
+    "description": "Projets sélectionnés en automatisation IA, ingénierie d'agents et conception de systèmes intelligents.",
+    "items": [
+      {
+        "title": "Orchestrateur Multi-Agents",
+        "description": "Un système d'agents autonomes coordonnant 15+ agents IA spécialisés pour l'automatisation de workflows enterprise. Chaque agent gère un domaine spécifique — extraction, classification, routage, prise de décision — tandis qu'un agent superviseur gère la coordination et la reprise d'erreur.",
+        "tags": ["Systèmes d'agents", "Orchestration", "Python"],
+        "year": "2026",
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Pipeline Documentaire Intelligent",
+        "description": "Pipeline de traitement documentaire de bout en bout utilisant la vision par ordinateur et le TALN. Extrait, classifie, valide et achemine automatiquement les documents entre les services. Réduction du temps de traitement de 85 % et élimination de la saisie manuelle.",
+        "tags": ["TALN", "Vision par ordinateur", "Pipeline"],
+        "year": "2025",
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Opérations Client Autonomes",
+        "description": "Agent IA multicanal gérant le support client de niveau 1 par email, chat et voix. Gère 70 % des demandes de manière autonome, trie les escalades avec contexte et s'améliore en continu grâce aux patterns de résolution.",
+        "tags": ["Service client", "LLM", "Intégration"],
+        "year": "2025",
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Stack de Monitoring Temps Réel",
+        "description": "Infrastructure d'observabilité pour les systèmes d'agents IA. Suit les décisions des agents, la latence, les taux d'erreur et les coûts en temps réel. Inclut la détection d'anomalies et des capacités de rollback automatisé.",
+        "tags": ["Observabilité", "Infrastructure", "Temps réel"],
+        "year": "2026",
+        "github": "https://github.com/tomefy"
+      }
+    ]
+  },
+  "LabPage": {
+    "title": "Laboratoire",
+    "description": "Expérimentations en cours, projets open-source et choses que je construis pour le plaisir.",
+    "items": [
+      {
+        "title": "Framework d'Agents",
+        "description": "Un framework open-source pour construire et orchestrer des systèmes multi-agents. Axé sur l'expérience développeur, l'observabilité et la préparation à la production.",
+        "status": "En cours",
+        "tags": ["Open Source", "Framework", "Agents"],
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Tableau de Bord d'Agents",
+        "description": "Tableau de bord de monitoring en temps réel pour les systèmes d'agents IA. Visualise les décisions des agents, les métriques de performance et la santé du système. Construit avec des technologies web modernes.",
+        "status": "En cours",
+        "tags": ["Dashboard", "Observabilité", "UI"],
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Optimiseur de Prompts",
+        "description": "Un outil expérimental qui optimise automatiquement les prompts en termes de coût, latence et qualité. Utilise des algorithmes évolutionnaires pour trouver les meilleures stratégies de prompt.",
+        "status": "Expérience",
+        "tags": ["LLM", "Optimisation", "Recherche"],
+        "github": "https://github.com/tomefy"
+      }
+    ]
+  },
+  "EntrepreneurshipPage": {
+    "title": "Entrepreneuriat",
+    "description": "Parcours entrepreneurial, projets et philosophie sur la construction d'entreprises technologiques.",
+    "hero": {
+      "heading": "Construire l'avenir des opérations autonomes.",
+      "body": "Je crois que les plus grandes opportunités se situent à l'intersection de l'IA et des opérations. Mon travail entrepreneurial se concentre sur l'identification des workflows prêts pour l'autonomie et la construction des systèmes qui la rendent possible."
+    },
+    "items": [
+      {
+        "title": "Conseil en Automatisation IA",
+        "description": "Aide aux entreprises pour identifier et mettre en œuvre des opportunités d'automatisation IA. Des ateliers de stratégie au déploiement à grande échelle de systèmes d'agents.",
+        "tags": ["Conseil", "Stratégie", "Mise en œuvre"],
+        "year": "2024 — Présent"
+      },
+      {
+        "title": "Contributions Open Source",
+        "description": "Création et maintenance d'outils open-source pour l'écosystème des agents IA. Contributions aux frameworks d'agents, outils de monitoring et utilitaires pour développeurs.",
+        "tags": ["Open Source", "Communauté", "Outils"],
+        "year": "2025 — Présent"
+      }
+    ],
+    "philosophy": {
+      "heading": "Ma philosophie",
+      "body": "Je construis des entreprises qui résolvent de vrais problèmes. Pas parce qu'une technologie est tendance, mais parce que le workflow est cassé et que l'IA peut le réparer. Je crois en une croissance durable, une ingénierie transparente et des produits qui apportent une valeur mesurable dès le premier jour."
+    }
+  },
+  "NotesPage": {
+    "title": "Notes",
+    "description": "Réflexions sur les agents IA, l'architecture d'automatisation et le building in public.",
+    "items": [
+      {
+        "title": "Pourquoi je construis des agents, pas des chatbots",
+        "date": "Mai 2026",
+        "excerpt": "Les chatbots répondent. Les agents agissent. Voici pourquoi la distinction est cruciale pour votre stratégie d'automatisation et comment penser à construire des systèmes qui font réellement les choses."
+      },
+      {
+        "title": "Le coût caché du prompt engineering",
+        "date": "Avril 2026",
+        "excerpt": "Le prompt engineering semble peu coûteux jusqu'à ce que vous ayez 200 prompts en production. Un framework pour gérer, tester et optimiser les prompts à grande échelle."
+      },
+      {
+        "title": "Automatisation d'abord vs IA d'abord : un framework",
+        "date": "Mars 2026",
+        "excerpt": "Tous les problèmes n'ont pas besoin d'IA. Un modèle mental pour décider quand automatiser avec des règles et quand faire appel à l'intelligence."
+      },
+      {
+        "title": "Construire des systèmes d'agents observables",
+        "date": "Février 2026",
+        "excerpt": "On ne peut pas améliorer ce qu'on ne voit pas. Comment j'aborde l'observabilité pour les systèmes d'IA autonomes — tracer les décisions, mesurer les résultats, détecter la dérive."
+      },
+      {
+        "title": "Le cas des agents spécialisés",
+        "date": "Janvier 2026",
+        "excerpt": "Pourquoi je préfère plusieurs petits agents spécialisés plutôt qu'un grand modèle généraliste. Leçons tirées de la construction de systèmes d'agents en production."
+      }
+    ]
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Contactez-moi pour des projets d'automatisation IA, d'ingénierie d'agents ou de collaborations entrepreneuriales.",
+    "heading": "Construisons quelque chose d'intelligent.",
+    "body": "Je suis toujours ouvert à discuter de nouveaux projets, partenariats ou idées. Que vous ayez besoin d'une stratégie d'automatisation IA, d'un système d'agents personnalisé, ou que vous souhaitiez simplement explorer les possibilités — contactez-moi.",
+    "cta": "Envoyer un email",
+    "ctaCalendar": "Réserver un appel",
+    "email": "hello@tomefy.com",
+    "social": {
+      "heading": "Retrouvez-moi ailleurs"
+    }
+  },
+  "Error": {
+    "title": "Une erreur est survenue",
+    "defaultMessage": "Une erreur inattendue s'est produite.",
+    "retry": "Réessayer"
+  },
+  "Footer": {
+    "pages": "Pages",
+    "connect": "Réseaux",
+    "rights": "Tous droits réservés."
+  },
+  "HomePage": {
+    "title": "Accueil",
+    "description": "Portfolio bilingue premium de Tomefy, ingénieur en automatisation IA et ingénieur en agents IA.",
+    "hero": {
+      "eyebrow": "Automatisation IA & Agents Intelligents",
+      "headline": "J'architecture des systèmes\nautonomes.",
+      "subtitle": "Des premiers principes à la production — des agents IA qui pensent, décident et agissent de manière indépendante.",
+      "cta": "Voir le travail"
+    },
+    "founder": {
+      "heading": "À propos",
+      "body": "Je suis Tomefy, ingénieur en automatisation IA et entrepreneur. Je construis des systèmes d'IA autonomes qui transforment des processus manuels en opérations intelligentes et évolutives. Concret. Des résultats.",
+      "cta": "En savoir plus"
+    },
+    "proof": {
+      "heading": "Une approche qui fait ses preuves",
+      "items": [
+        { "metric": "20+", "label": "Projets d'automatisation IA livrés" },
+        { "metric": "40%", "label": "Réduction moyenne des coûts opérationnels" },
+        { "metric": "7", "label": "Projets open-source maintenus" }
+      ]
+    },
+    "featuredWork": {
+      "heading": "Réalisations choisies",
+      "items": [
+        {
+          "title": "Orchestrateur Multi-Agents",
+          "description": "Conception d'un système d'agents autonomes coordonnant 15+ agents IA spécialisés pour l'automatisation de workflows enterprise.",
+          "tags": ["Systèmes d'agents", "Orchestration", "Python"],
+          "href": "/work"
+        },
+        {
+          "title": "Processeur de Documents Intelligent",
+          "description": "Pipeline IA qui extrait, classifie et achemine les documents entre services — réduisant le temps de traitement de 85%.",
+          "tags": ["TALN", "Vision par ordinateur", "Pipeline"],
+          "href": "/work"
+        },
+        {
+          "title": "Opérations Client Autonomes",
+          "description": "Agent IA multicanal gérant le support niveau 1, triant les escalades et apprenant des patterns de résolution.",
+          "tags": ["Service client", "LLM", "Intégration"],
+          "href": "/work"
+        }
+      ]
+    },
+    "lab": {
+      "heading": "En cours de construction",
+      "body": "Frameworks open-source pour la coordination multi-agents. Tableaux de bord temps réel pour systèmes d'agents. Et quelques expériences dont je ne suis pas encore prêt à parler.",
+      "cta": "Explorer le labo"
+    },
+    "notes": {
+      "heading": "Réflexions récentes",
+      "body": "Notes sur les agents IA, l'architecture d'automatisation, et le building in public avec du code.",
+      "cta": "Toutes les notes",
+      "items": [
+        { "title": "Pourquoi je construis des agents, pas des chatbots", "slug": "why-agents-not-chatbots", "date": "2026-05" },
+        { "title": "Le coût caché du prompt engineering", "slug": "hidden-cost-prompt-engineering", "date": "2026-04" },
+        { "title": "Automatisation d'abord vs IA d'abord : un framework", "slug": "automation-first-vs-ai-first", "date": "2026-03" }
+      ]
+    },
+    "contact": {
+      "heading": "Construisons quelque chose d'intelligent.",
+      "cta": "Lancer la conversation"
+    }
+  }
+}

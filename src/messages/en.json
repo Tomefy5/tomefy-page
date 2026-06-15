@@ -1,0 +1,262 @@
+{
+  "Home": {
+    "title": "Home",
+    "description": "Premium bilingual portfolio of Tomefy, AI Automation Engineer and AI Agent Engineer."
+  },
+  "About": {
+    "title": "About"
+  },
+  "Contact": {
+    "title": "Contact"
+  },
+  "Work": {
+    "title": "Work"
+  },
+  "Lab": {
+    "title": "Lab"
+  },
+  "Entrepreneurship": {
+    "title": "Entrepreneurship"
+  },
+  "Notes": {
+    "title": "Notes"
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "Learn more about Tomefy, an AI Automation Engineer and entrepreneur building autonomous AI systems.",
+    "hero": {
+      "heading": "I build autonomous AI systems.",
+      "body": "I'm an AI Automation Engineer and AI Agent Engineer with a deep focus on designing systems that think, decide, and act independently. My work sits at the intersection of software engineering, machine learning operations, and systems design.\n\nOver the past years, I've helped companies transform manual processes into scalable, intelligent operations — from customer support automation to complex multi-agent orchestration. I believe the future of work is autonomous, and I'm building it one agent at a time."
+    },
+    "expertise": {
+      "heading": "Areas of expertise",
+      "items": [
+        {
+          "title": "AI Agent Engineering",
+          "description": "Designing and deploying autonomous agents that perceive, reason, and act within complex environments."
+        },
+        {
+          "title": "Workflow Automation",
+          "description": "Transforming manual multi-step processes into reliable, event-driven automated pipelines."
+        },
+        {
+          "title": "System Architecture",
+          "description": "Building scalable, observable infrastructure for production AI systems."
+        },
+        {
+          "title": "LLM Integration",
+          "description": "Integrating large language models into real-world products with robust guardrails."
+        }
+      ]
+    },
+    "approach": {
+      "heading": "How I work",
+      "body": "I start with the problem, not the technology. Every project begins with understanding the workflow you want to automate — the inputs, the decisions, the exceptions. Then I design a system that fits your infrastructure, not the other way around.\n\nI believe in production-first engineering. An agent that works in a demo but fails in production isn't valuable. I build systems that are observable, resilient, and maintainable from day one."
+    }
+  },
+  "WorkPage": {
+    "title": "Work",
+    "description": "Selected projects in AI automation, agent engineering, and intelligent system design.",
+    "items": [
+      {
+        "title": "Multi-Agent Orchestrator",
+        "description": "An autonomous agent system that coordinates 15+ specialized AI agents for enterprise workflow automation. Each agent handles a specific domain — data extraction, classification, routing, decision-making — while a supervisor agent manages coordination and error recovery.",
+        "tags": ["Agent Systems", "Orchestration", "Python"],
+        "year": "2026",
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Intelligent Document Pipeline",
+        "description": "End-to-end document processing pipeline using computer vision and NLP. Automatically extracts, classifies, validates, and routes documents across departments. Reduced processing time by 85% and eliminated manual data entry.",
+        "tags": ["NLP", "Computer Vision", "Pipeline"],
+        "year": "2025",
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Autonomous Customer Operations",
+        "description": "Multi-channel AI agent handling tier-1 customer support across email, chat, and voice. Handles 70% of inquiries autonomously, triages escalations with context, and continuously improves from resolution patterns.",
+        "tags": ["Customer Ops", "LLM", "Integration"],
+        "year": "2025",
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Real-Time Monitoring Stack",
+        "description": "Observability infrastructure for AI agent systems. Tracks agent decisions, latency, error rates, and cost in real-time. Includes anomally detection and automated rollback capabilities.",
+        "tags": ["Observability", "Infrastructure", "Real-Time"],
+        "year": "2026",
+        "github": "https://github.com/tomefy"
+      }
+    ]
+  },
+  "LabPage": {
+    "title": "Lab",
+    "description": "Current experiments, open-source work, and things I'm building for fun.",
+    "items": [
+      {
+        "title": "Agent Framework",
+        "description": "An open-source framework for building and orchestrating multi-agent systems. Focused on developer experience, observability, and production readiness.",
+        "status": "In progress",
+        "tags": ["Open Source", "Framework", "Agents"],
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Agent Dashboard",
+        "description": "Real-time monitoring dashboard for AI agent systems. Visualizes agent decisions, performance metrics, and system health. Built with modern web technologies.",
+        "status": "In progress",
+        "tags": ["Dashboard", "Observability", "UI"],
+        "github": "https://github.com/tomefy"
+      },
+      {
+        "title": "Prompt Optimizer",
+        "description": "An experimental tool that automatically optimizes prompts for cost, latency, and quality. Uses evolutionary algorithms to find the best prompt strategies.",
+        "status": "Experiment",
+        "tags": ["LLM", "Optimization", "Research"],
+        "github": "https://github.com/tomefy"
+      }
+    ]
+  },
+  "EntrepreneurshipPage": {
+    "title": "Entrepreneurship",
+    "description": "Entrepreneurial journey, ventures, and philosophy on building technology businesses.",
+    "hero": {
+      "heading": "Building the future of autonomous operations.",
+      "body": "I believe the biggest opportunities lie at the intersection of AI and operations. My entrepreneurial work focuses on identifying workflows that are ripe for autonomy and building the systems that make it happen."
+    },
+    "items": [
+      {
+        "title": "AI Automation Consultancy",
+        "description": "Helping businesses identify and implement AI automation opportunities. From strategy workshops to full-scale deployment of agent systems.",
+        "tags": ["Consulting", "Strategy", "Implementation"],
+        "year": "2024 — Present"
+      },
+      {
+        "title": "Open Source Contributions",
+        "description": "Building and maintaining open-source tools for the AI agent ecosystem. Contributions to agent frameworks, monitoring tools, and developer utilities.",
+        "tags": ["Open Source", "Community", "Tools"],
+        "year": "2025 — Present"
+      }
+    ],
+    "philosophy": {
+      "heading": "My philosophy",
+      "body": "I build businesses that solve real problems. Not because a technology is trendy, but because the workflow is broken and AI can fix it. I believe in sustainable growth, transparent engineering, and products that deliver measurable value from day one."
+    }
+  },
+  "NotesPage": {
+    "title": "Notes",
+    "description": "Thoughts on AI agents, automation architecture, and building in public.",
+    "items": [
+      {
+        "title": "Why I build agents, not chatbots",
+        "date": "May 2026",
+        "excerpt": "Chatbots respond. Agents act. Here's why the distinction matters for your automation strategy and how to think about building systems that actually do things."
+      },
+      {
+        "title": "The hidden cost of prompt engineering",
+        "date": "April 2026",
+        "excerpt": "Prompt engineering seems cheap until you have 200 prompts in production. A framework for managing, testing, and optimizing prompts at scale."
+      },
+      {
+        "title": "Automation-first vs AI-first: a framework",
+        "date": "March 2026",
+        "excerpt": "Not every problem needs AI. A mental model for deciding when to automate with rules and when to bring in intelligence."
+      },
+      {
+        "title": "Building observable agent systems",
+        "date": "February 2026",
+        "excerpt": "You can't improve what you can't see. How I approach observability for autonomous AI systems — tracing decisions, measuring outcomes, detecting drift."
+      },
+      {
+        "title": "The case for specialized agents",
+        "date": "January 2026",
+        "excerpt": "Why I prefer many small, specialized agents over one large general-purpose model. Lessons from building production agent systems."
+      }
+    ]
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Get in touch for AI automation, agent engineering, or entrepreneurial collaborations.",
+    "heading": "Let's build something intelligent.",
+    "body": "I'm always open to discussing new projects, partnerships, or ideas. Whether you need an AI automation strategy, a custom agent system, or just want to explore what's possible — reach out.",
+    "cta": "Send an email",
+    "ctaCalendar": "Book a call",
+    "email": "hello@tomefy.com",
+    "social": {
+      "heading": "Find me elsewhere"
+    }
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "defaultMessage": "An unexpected error occurred.",
+    "retry": "Try again"
+  },
+  "Footer": {
+    "pages": "Pages",
+    "connect": "Connect",
+    "rights": "All rights reserved."
+  },
+  "HomePage": {
+    "title": "Home",
+    "description": "Premium bilingual portfolio of Tomefy, AI Automation Engineer and AI Agent Engineer.",
+    "hero": {
+      "eyebrow": "AI Automation & Agent Engineering",
+      "headline": "I architect autonomous\nsystems.",
+      "subtitle": "From first principles to production — AI agents that think, decide, and act independently.",
+      "cta": "View selected work"
+    },
+    "founder": {
+      "heading": "About",
+      "body": "I'm Tomefy, an AI Automation Engineer and entrepreneur. I build autonomous AI systems that transform manual processes into scalable, intelligent operations. No fluff. Results only.",
+      "cta": "More about me"
+    },
+    "proof": {
+      "heading": "Trusted by teams building the future",
+      "items": [
+        { "metric": "20+", "label": "AI automation projects delivered" },
+        { "metric": "40%", "label": "Average operational cost reduction" },
+        { "metric": "7", "label": "Open-source projects maintained" }
+      ]
+    },
+    "featuredWork": {
+      "heading": "Selected work",
+      "items": [
+        {
+          "title": "Multi-Agent Orchestrator",
+          "description": "Designed an autonomous agent system that coordinates 15+ specialized AI agents to handle enterprise-grade workflow automation.",
+          "tags": ["Agent Systems", "Orchestration", "Python"],
+          "href": "/work"
+        },
+        {
+          "title": "Intelligent Document Processor",
+          "description": "Built an AI pipeline that extracts, classifies, and routes documents across departments — reducing processing time by 85%.",
+          "tags": ["NLP", "Computer Vision", "Pipeline"],
+          "href": "/work"
+        },
+        {
+          "title": "Autonomous Customer Operations",
+          "description": "Deployed a multi-channel AI agent that handles tier-1 support, triages escalations, and learns from resolution patterns.",
+          "tags": ["Customer Ops", "LLM", "Integration"],
+          "href": "/work"
+        }
+      ]
+    },
+    "lab": {
+      "heading": "Currently building",
+      "body": "Open-source frameworks for multi-agent coordination. Real-time monitoring dashboards for agent systems. And a few experiments I'm not ready to talk about yet.",
+      "cta": "Explore the lab"
+    },
+    "notes": {
+      "heading": "Recent thinking",
+      "body": "Notes on AI agents, automation architecture, and building in public with code.",
+      "cta": "All notes",
+      "items": [
+        { "title": "Why I build agents, not chatbots", "slug": "why-agents-not-chatbots", "date": "2026-05" },
+        { "title": "The hidden cost of prompt engineering", "slug": "hidden-cost-prompt-engineering", "date": "2026-04" },
+        { "title": "Automation-first vs AI-first: a framework", "slug": "automation-first-vs-ai-first", "date": "2026-03" }
+      ]
+    },
+    "contact": {
+      "heading": "Let's build something intelligent.",
+      "cta": "Start a conversation"
+    }
+  }
+}
