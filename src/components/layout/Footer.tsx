@@ -7,7 +7,7 @@ export default async function Footer({ locale }: { locale: string }) {
   const t = await getTranslations();
 
   return (
-    <footer className="relative border-t border-border-primary bg-accent-glass">
+    <footer className="relative overflow-x-hidden border-t border-border-primary bg-accent-glass">
       {/* Subtle glow */}
       <div
         className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-80 w-[600px] -translate-x-1/2 opacity-30"

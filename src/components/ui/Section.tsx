@@ -23,7 +23,7 @@ export default function Section({
   return (
     <Tag
       className={`relative py-24 md:py-32 lg:py-44 ${
-        decorated ? "border-t border-border-primary" : ""
+        decorated ? "border-t border-border-primary overflow-x-hidden" : ""
       } ${layered ? "bg-accent-glass" : ""} ${className}`}
     >
       {decorated && (

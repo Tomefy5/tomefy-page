@@ -44,7 +44,7 @@ export default function NotesPage() {
               <Float key={item.title} delay={i * 0.08} distance={4} duration={5}>
                 <Card as="article" className="group">
                   <div className="flex items-start justify-between gap-4">
-                    <h3 className="heading-card text-text-primary transition-colors group-hover:text-accent">
+                    <h3 className="heading-card min-w-0 text-text-primary transition-colors group-hover:text-accent">
                       {item.title}
                     </h3>
                     <span className="meta shrink-0 tabular-nums text-text-tertiary">
