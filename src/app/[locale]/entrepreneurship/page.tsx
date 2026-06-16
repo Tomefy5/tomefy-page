@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Container, Section, Heading, Badge, MotionWrapper, Float, Card, PageLayout } from "@/components/ui";
 
@@ -20,8 +20,8 @@ export async function generateMetadata({
   });
 }
 
-export default function EntrepreneurshipPage() {
-  const t = useTranslations("EntrepreneurshipPage");
+export default async function EntrepreneurshipPage() {
+  const t = await getTranslations("EntrepreneurshipPage");
   const items = t.raw("items") as {
     title: string;
     description: string;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Container, Section, Heading, MotionWrapper, Float, Card, PageLayout } from "@/components/ui";
 
@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({ locale, namespace: "NotesPage", path: "/notes" });
 }
 
-export default function NotesPage() {
-  const t = useTranslations("NotesPage");
+export default async function NotesPage() {
+  const t = await getTranslations("NotesPage");
   const items = t.raw("items") as {
     title: string;
     date: string;

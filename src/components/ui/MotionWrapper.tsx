@@ -31,10 +31,10 @@ export default function MotionWrapper({
 
   return (
     <Tag
-      ref={ref as any}
-      className={`transition-all duration-[600ms] ease-out will-change-transform ${
+      ref={ref as never}
+      className={`transition-all duration-[600ms] ease-out ${
         variantClasses[variant]
-      } ${inView ? "!opacity-100 !translate-y-0 !translate-x-0 !scale-100" : ""} ${className}`}
+      } ${inView ? "will-change-transform !opacity-100 !translate-y-0 !translate-x-0 !scale-100" : ""} ${className}`}
       style={{ transitionDelay: `${delay}s` }}
     >
       {children}

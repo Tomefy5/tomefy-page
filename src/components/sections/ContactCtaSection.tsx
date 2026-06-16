@@ -1,13 +1,10 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import { LinkButton } from "@/components/ui";
 import MotionWrapper from "@/components/ui/MotionWrapper";
 
-export default function ContactCtaSection() {
-  const t = useTranslations("HomePage.contact");
-  const locale = useLocale();
+export default async function ContactCtaSection() {
+  const t = await getTranslations("HomePage.contact");
+  const locale = await getLocale();
 
   return (
     <section className="border-t border-border-primary">

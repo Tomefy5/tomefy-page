@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Container, Section, Heading, MotionWrapper, PageLayout } from "@/components/ui";
 import { socialLinks, email } from "@/lib/constants";
@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({ locale, namespace: "ContactPage", path: "/contact" });
 }
 
-export default function ContactPage() {
-  const t = useTranslations("ContactPage");
+export default async function ContactPage() {
+  const t = await getTranslations("ContactPage");
 
   return (
     <PageLayout>

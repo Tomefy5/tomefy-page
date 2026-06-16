@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const LocaleSwitcher = dynamic(() => import("../LocaleSwitcher"), {
@@ -91,11 +90,8 @@ export default function Navbar() {
   }
 
   return (
-    <motion.header
-      initial={{ y: -12, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-      className={`fixed inset-x-4 top-4 z-50 rounded-2xl border transition-all duration-500 ${
+    <header
+      className={`fixed inset-x-4 top-4 z-50 animate-[hero-fade-up_0.5s_ease-out_0.1s_both] rounded-2xl border transition-all duration-500 ${
         scrolled
           ? "border-border-glass bg-bg-primary/55 shadow-[0_12px_48px_rgba(0,0,0,0.4)] backdrop-blur-2xl"
           : "border-border-glass/50 bg-bg-primary/30 shadow-[0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-xl"
@@ -116,6 +112,7 @@ export default function Navbar() {
             width={72}
             height={48}
             className="h-10 w-auto md:h-12"
+            sizes="72px"
             priority
           />
           <span className="brand-text text-accent">
@@ -215,6 +212,6 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
-    </motion.header>
+    </header>
   );
 }

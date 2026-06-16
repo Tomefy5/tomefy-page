@@ -1,14 +1,11 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Image from "next/image";
 import { LinkButton } from "@/components/ui";
 import MotionWrapper from "@/components/ui/MotionWrapper";
 
-export default function FounderSection() {
-  const t = useTranslations("HomePage.founder");
-  const locale = useLocale();
+export default async function FounderSection() {
+  const t = await getTranslations("HomePage.founder");
+  const locale = await getLocale();
 
   return (
     <section className="border-t border-border-primary">
@@ -22,7 +19,8 @@ export default function FounderSection() {
                   alt="Tomefy"
                   fill
                   className="object-cover"
-                  priority
+                  sizes="(max-width: 768px) 176px, 192px"
+                  loading="lazy"
                 />
               </div>
             </div>

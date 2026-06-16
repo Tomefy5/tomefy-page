@@ -1,21 +1,18 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
-import { useLocale } from "next-intl";
 import { Badge, Card } from "@/components/ui";
 import Float from "@/components/ui/Float";
 import MotionWrapper from "@/components/ui/MotionWrapper";
 
-export default function FeaturedWorkSection() {
-  const t = useTranslations("HomePage.featuredWork");
+export default async function FeaturedWorkSection() {
+  const t = await getTranslations("HomePage.featuredWork");
   const items = t.raw("items") as {
     title: string;
     description: string;
     tags: string[];
     href: string;
   }[];
-  const locale = useLocale();
+  const locale = await getLocale();
 
   return (
     <section className="border-t border-border-primary">

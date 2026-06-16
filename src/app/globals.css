@@ -60,11 +60,6 @@
   50% { transform: translateY(calc(var(--float-distance, 8px) * -1)); }
 }
 
-@keyframes glow-pulse {
-  0%, 100% { opacity: var(--glow-opacity-start, 0.06); }
-  50% { opacity: var(--glow-opacity-end, 0.14); }
-}
-
 @keyframes glow-pulse-accent {
   0%, 100% { opacity: 0.06; }
   50% { opacity: 0.14; }
@@ -97,11 +92,6 @@
   to { opacity: 1; }
 }
 
-@keyframes scroll-reveal {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -120,7 +110,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   overflow-wrap: break-word;
 }
 

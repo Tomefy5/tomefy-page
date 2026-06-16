@@ -3,8 +3,6 @@
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { motion } from "framer-motion";
-import { ease } from "@/lib/motion";
 
 const locales = [
   { code: "fr", label: "FR" },
@@ -33,10 +31,8 @@ export default function LocaleSwitcher() {
       aria-label={locale === "fr" ? "Langue" : "Language"}
     >
       {/* Sliding active pill */}
-      <motion.div
-        className="absolute left-0.5 top-0.5 bottom-0.5 rounded-md bg-accent"
-        layout
-        transition={{ duration: 0.2, ease }}
+      <div
+        className="absolute top-0.5 bottom-0.5 rounded-md bg-accent transition-all duration-200 ease-out"
         style={{
           width: `calc(50% - 2px)`,
           left: locale === "en" ? "calc(50% + 0px)" : "2px",

@@ -1,19 +1,16 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
-import { useLocale } from "next-intl";
 import { LinkButton } from "@/components/ui";
 import MotionWrapper from "@/components/ui/MotionWrapper";
 
-export default function NotesPreviewSection() {
-  const t = useTranslations("HomePage.notes");
+export default async function NotesPreviewSection() {
+  const t = await getTranslations("HomePage.notes");
   const items = t.raw("items") as {
     title: string;
     slug: string;
     date: string;
   }[];
-  const locale = useLocale();
+  const locale = await getLocale();
 
   return (
     <section className="border-t border-border-primary">

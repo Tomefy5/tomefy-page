@@ -1,11 +1,9 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Float from "@/components/ui/Float";
 import MotionWrapper from "@/components/ui/MotionWrapper";
 
-export default function ProofSection() {
-  const t = useTranslations("HomePage.proof");
+export default async function ProofSection() {
+  const t = await getTranslations("HomePage.proof");
   const items = t.raw("items") as { metric: string; label: string }[];
 
   return (

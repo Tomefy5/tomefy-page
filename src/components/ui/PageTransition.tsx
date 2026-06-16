@@ -1,8 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { pageTransition } from "@/lib/motion";
 
 export default function PageTransition({
   children,
@@ -12,13 +10,11 @@ export default function PageTransition({
   const pathname = usePathname();
 
   return (
-    <motion.div
+    <div
       key={pathname}
-      initial={pageTransition.initial}
-      animate={pageTransition.animate}
-      transition={pageTransition.transition}
+      className="animate-[hero-fade_0.4s_ease-out]"
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

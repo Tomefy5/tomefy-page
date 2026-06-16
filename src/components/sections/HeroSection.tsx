@@ -1,12 +1,9 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import { LinkButton } from "@/components/ui";
 
-export default function HeroSection() {
-  const t = useTranslations("HomePage.hero");
-  const locale = useLocale();
+export default async function HeroSection() {
+  const t = await getTranslations("HomePage.hero");
+  const locale = await getLocale();
   const lines = t("headline").split("\n");
 
   return (

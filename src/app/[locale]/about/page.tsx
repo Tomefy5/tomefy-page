@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Container, Section, Heading, MotionWrapper, Float, Card, PageLayout } from "@/components/ui";
@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return generatePageMetadata({ locale, namespace: "AboutPage", path: "/about" });
 }
 
-export default function AboutPage() {
-  const t = useTranslations("AboutPage");
+export default async function AboutPage() {
+  const t = await getTranslations("AboutPage");
   const expertise = t.raw("expertise.items") as {
     title: string;
     description: string;
@@ -51,6 +51,7 @@ export default function AboutPage() {
                   alt="Tomefy"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 176px, 192px"
                   priority
                 />
               </div>
