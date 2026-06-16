@@ -1,3 +1,5 @@
+import SectionDivider from "./SectionDivider";
+
 type SectionProps = {
   children: React.ReactNode;
   className?: string;
@@ -5,6 +7,7 @@ type SectionProps = {
   decorated?: boolean;
   glowSide?: "left" | "right";
   layered?: boolean;
+  divider?: "wave" | "curve";
 };
 
 export default function Section({
@@ -14,6 +17,7 @@ export default function Section({
   decorated = false,
   glowSide = "right",
   layered = false,
+  divider,
 }: SectionProps) {
   const glowPos =
     glowSide === "right"
@@ -26,6 +30,7 @@ export default function Section({
         decorated ? "border-t border-border-primary overflow-x-hidden" : ""
       } ${layered ? "bg-accent-glass" : ""} ${className}`}
     >
+      {divider && <SectionDivider variant={divider} className="absolute top-0" />}
       {decorated && (
         <div
           className={`pointer-events-none absolute top-0 -z-10 h-80 w-80 md:h-96 md:w-96 ${glowPos} -translate-y-1/2 opacity-30 md:opacity-20`}

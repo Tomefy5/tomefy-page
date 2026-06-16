@@ -1,5 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { LinkButton } from "@/components/ui";
+import MouseParallax from "@/components/ui/MouseParallax";
+import HeroBackground from "@/components/ui/HeroBackground";
 
 export default async function HeroSection() {
   const t = await getTranslations("HomePage.hero");
@@ -8,32 +10,22 @@ export default async function HeroSection() {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Ambient pulsing glow */}
-      <div
-        className="pointer-events-none absolute inset-0 -z-10 animate-glow-pulse-accent"
-      >
-        <div
-          className="absolute left-[15%] top-[20%] h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 md:h-[800px] md:w-[800px]"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, var(--color-accent-glow), transparent 70%)",
-          }}
-        />
-      </div>
+      {/* 3D background scene — lazy loaded */}
+      <HeroBackground />
 
-      {/* Floating decorative circle */}
-      <div
-        className="pointer-events-none absolute -right-32 top-[10%] -z-10 hidden animate-float-circle md:block"
-      >
-        <div className="h-[450px] w-[450px] rounded-full border border-accent/15" />
-      </div>
+      {/* Floating decorative circle with mouse parallax */}
+      <MouseParallax intensity={10} className="pointer-events-none absolute -right-32 top-[10%] -z-10 hidden md:block">
+        <div className="animate-float-circle">
+          <div className="h-[450px] w-[450px] rounded-full border border-accent/15" />
+        </div>
+      </MouseParallax>
 
-      {/* Secondary floating circle */}
-      <div
-        className="pointer-events-none absolute -left-20 bottom-[20%] -z-10 hidden animate-float-circle-slow lg:block"
-      >
-        <div className="h-[200px] w-[200px] rounded-full border border-accent/10" />
-      </div>
+      {/* Secondary floating circle with mouse parallax */}
+      <MouseParallax intensity={6} className="pointer-events-none absolute -left-20 bottom-[20%] -z-10 hidden lg:block">
+        <div className="animate-float-circle-slow">
+          <div className="h-[200px] w-[200px] rounded-full border border-accent/10" />
+        </div>
+      </MouseParallax>
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 md:px-10 lg:px-12">

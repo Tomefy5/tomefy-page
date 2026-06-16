@@ -7,7 +7,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import PageTransition from "@/components/ui/PageTransition";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { AmbientGlow } from "@/components/ui";
+import { GradientMesh } from "@/components/ui";
 import { siteUrl } from "@/lib/constants";
 
 const geistSans = Geist({
@@ -78,12 +78,8 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* Global ambient glow */}
-        <AmbientGlow
-          className="fixed left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2"
-          size={800}
-          color="rgba(201, 169, 255, 0.08)"
-        />
+        {/* Global animated gradient mesh */}
+        <GradientMesh />
 
         <a
           href="#main-content"
